@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">IsmaPay</string>
+    <string name="get_started">Get Started</string>
+    <string name="tv_welcome">The Best App to\n manage your \n money</string>
 </resources>
