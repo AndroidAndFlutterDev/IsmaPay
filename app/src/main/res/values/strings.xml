@@ -1,7 +1,16 @@
 <resources>
     <string name="app_name">IsmaPay</string>
+
+    <!--Intro-->
+
     <string name="get_started">Get Started</string>
     <string name="tv_welcome">The Best App to\n manage your \n money</string>
+
+    <!--Dashboard-->
+
     <string name="welcome_user">Hello Unknown Person</string>
     <string name="example_gmail">yourgmail@example.com</string>
+    <string name="your_balance">Your Balance</string>
+    <string name="example_balance">$ 25.14</string>
+    <string name="deposite">Deposite</string>
 </resources>
