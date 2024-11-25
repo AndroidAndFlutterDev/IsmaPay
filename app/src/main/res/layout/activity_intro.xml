@@ -5,27 +5,25 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context=".IntroActivity">
-
 
     <ImageView
         android:id="@+id/backgroundIntro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:scaleType="centerCrop"
         android:src="@drawable/intro_pic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/tv_welcome"
         android:textColor="@color/white"
         android:textSize="35sp"
@@ -35,12 +33,13 @@
 
     <TextView
         android:id="@+id/btnStart"
-        android:layout_width="135dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
         android:layout_marginBottom="70dp"
         android:background="@drawable/stroke_bg"
         android:gravity="center"
+        android:padding="10dp"
         android:text="@string/get_started"
         android:textColor="@color/white"
         android:textSize="20sp"

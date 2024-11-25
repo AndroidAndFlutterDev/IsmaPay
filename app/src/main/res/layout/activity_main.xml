@@ -5,9 +5,11 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="0dp"
@@ -16,13 +18,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp">
 
                 <ImageView
@@ -32,7 +35,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/men" />
+                    app:srcCompat="@drawable/unknown_user" />
 
                 <TextView
                     android:id="@+id/tvWelcomeUser"
@@ -41,7 +44,7 @@
                     android:layout_marginTop="16dp"
                     android:text="@string/welcome_user"
                     android:textColor="@color/dark_blue"
-                    android:textSize="19sp"
+                    android:textSize="15sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -66,7 +69,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout"
                     android:layout_width="match_parent"
-                    android:layout_height="230dp"
+                    android:layout_height="200dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -86,7 +89,7 @@
                         android:id="@+id/imageView3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
+                        android:layout_marginStart="12dp"
                         android:layout_marginTop="16dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -107,6 +110,7 @@
                         android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
                         android:text="x/xx/xxxx"
                         android:textColor="@color/white"
                         android:textSize="18sp"
@@ -133,10 +137,12 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="32dp"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="10dp"
                             android:text="@string/your_balance"
                             android:textColor="@color/white"
                             android:textSize="17sp"
+                            app:layout_constraintBottom_toTopOf="@+id/textView6"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -144,10 +150,12 @@
                             android:id="@+id/textView6"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginBottom="30dp"
                             android:text="@string/example_balance"
                             android:textColor="@color/white"
-                            android:textSize="30sp"
+                            android:textSize="25sp"
                             android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="@+id/textView5"
                             app:layout_constraintTop_toBottomOf="@+id/textView5" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -159,13 +167,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="5dp"
+                    android:layout_height="60dp"
                     android:layout_weight="0.25"
                     android:background="@drawable/ligth_blue_bg"
                     android:orientation="vertical">
@@ -173,14 +181,13 @@
                     <ImageView
                         android:id="@+id/imageView4"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40sp"
                         app:srcCompat="@drawable/btn_1" />
 
                     <TextView
                         android:id="@+id/TextView7"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                        android:layout_height="match_parent"
                         android:text="@string/deposite"
                         android:textAlignment="center"
                         android:textColor="@color/dark_blue"
@@ -190,25 +197,22 @@
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.25"
+                    android:layout_height="60dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="8dp"
+                    android:layout_weight="0.25"
                     android:background="@drawable/ligth_blue_bg"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageView4"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/btn_1" />
+                        android:layout_height="40dp"
+                        app:srcCompat="@drawable/btn_2" />
 
                     <TextView
-                        android:id="@+id/TextView7"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="@string/deposite"
+                        android:text="@string/withdraw"
                         android:textAlignment="center"
                         android:textColor="@color/dark_blue"
                         android:textSize="12sp"
@@ -217,25 +221,23 @@
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.25"
+                    android:layout_height="60dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="16dp"
+                    android:layout_weight="0.25"
                     android:background="@drawable/ligth_blue_bg"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageView4"
+                        android:id="@+id/btn_3"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/btn_1" />
+                        android:layout_height="40dp"
+                        app:srcCompat="@drawable/btn_3" />
 
                     <TextView
-                        android:id="@+id/TextView7"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="@string/deposite"
+                        android:text="@string/add_card"
                         android:textAlignment="center"
                         android:textColor="@color/dark_blue"
                         android:textSize="12sp"
@@ -244,23 +246,21 @@
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_height="78dp"
+                    android:layout_height="60dp"
                     android:layout_weight="0.25"
                     android:background="@drawable/ligth_blue_bg"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageView4"
+                        android:id="@+id/imageView7"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/btn_1" />
+                        android:layout_height="40dp"
+                        app:srcCompat="@drawable/btn_4" />
 
                     <TextView
-                        android:id="@+id/TextView7"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="@string/deposite"
+                        android:text="@string/view_all"
                         android:textAlignment="center"
                         android:textColor="@color/dark_blue"
                         android:textSize="12sp"
@@ -268,6 +268,36 @@
                 </LinearLayout>
 
             </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/view1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" />
         </LinearLayout>
     </ScrollView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:elevation="3dp"
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/white"
+            android:layout_gravity="bottom"
+            app:itemIconTint="@color/btn_nav_selector"
+            app:itemTextColor="@color/btn_nav_selector"
+            app:labelVisibilityMode="labeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_menu"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

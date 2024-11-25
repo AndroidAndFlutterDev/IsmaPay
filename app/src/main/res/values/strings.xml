@@ -13,4 +13,12 @@
     <string name="your_balance">Your Balance</string>
     <string name="example_balance">$ 25.14</string>
     <string name="deposite">Deposite</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="add_card">Add Card</string>
+    <string name="view_all">View All</string>
+    <string name="home">Home</string>
+    <string name="explorer">Explorer</string>
+    <string name="bookmarket">BM</string>
+    <string name="chart">Chart</string>
+    <string name="profile">Profile</string>
 </resources>
